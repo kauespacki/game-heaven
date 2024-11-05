@@ -47,7 +47,7 @@
         }
 
         .buy-btn {
-            background-color: #5cb85c;
+            background-color: #444;
             color: #fff;
             border: none;
             padding: 10px 20px;
@@ -76,20 +76,67 @@
 </head>
 <body>
     <header>
-        <div class="logo"><img src="logo.png" alt="Logo do site"></div>
+        <div class="logo"><img src="imgs/logo.png" alt="Logo do site"></div>
         <nav>
             <a href="index.html">Home</a>
-            <a href="jogos.html">Jogos</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown()">Catálogo</button>
+                <div class="dropdown-content" id="dropdownMenu">
+                    <a href="pagjogo.html">Elden Ring</a>
+                    <a href="#">Far Cry 6</a>
+                    <a href="#">Grand Theft Auto V</a>
+                    <a href="#">Dying Light 2 Stay Human</a>
+                    <a href="#">Spiderman</a>
+                </div>
+            </div>
             <a href="contato.html">Contato</a>
             <a href="sobre.html">Sobre</a>
-            <button>Cadastrar</button>
-            <button>Login</button>
+            <button class="btn cadastrar">Cadastrar</button>
+            <button class="btn login">Login</button>
         </nav>
     </header>
+    <script src="script.js"></script>
+    <div id="ModalLogin" class="modal">
+        <div class="modal-conteudo">
+            <span class="close" id="spanLogin">&times;</span>
+            <h2>Login</h2>
+            <form id="formLogin">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="ModalCadastrar" class="modal">
+        <div class="modal-conteudo">
+            <span class="close" id="spanCadastro">&times;</span>
+            <h2>Cadastro</h2>
+            <form id="formCadastro">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+
+                <label for="confirmaSenha">Confirme a Senha:</label>
+                <input type="password" id="confirmaSenha" name="confirmaSenha" required>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </div>
 
     <section class="game-page-container">
         <div class="game-image">
-            <img src="elden-ring.jpg" alt="Imagem do Jogo Elden Ring">
+            <img src="imgs/elden-ring.jpg" alt="Imagem do Jogo Elden Ring">
         </div>
 
         <div class="game-info">
@@ -129,7 +176,7 @@
     </section>
 
     <footer>
-        <div class="logo"><img src="logo.png" alt="Logo do site"></div>
+        <div class="logo"><img src="imgs/logo.png" alt="Logo do site"></div>
         <p>Nenhum direito reservado &copy; 2024</p>
     </footer>
 

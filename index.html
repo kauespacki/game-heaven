@@ -75,7 +75,16 @@
         <div class="logo"><img src="imgs/logo.png" alt="Logo do site"></div>
         <nav>
             <a href="index.html">Home</a>
-            <a href="#">Jogos</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown()">Catálogo</button>
+                <div class="dropdown-content" id="dropdownMenu">
+                    <a href="pagjogo.html">Elden Ring</a>
+                    <a href="#">Far Cry 6</a>
+                    <a href="#">Grand Theft Auto V</a>
+                    <a href="#">Dying Light 2 Stay Human</a>
+                    <a href="#">Spiderman</a>
+                </div>
+            </div>
             <a href="contato.html">Contato</a>
             <a href="sobre.html">Sobre</a>
             <button class="btn cadastrar">Cadastrar</button>
@@ -129,7 +138,7 @@
 
     <section class="cards container" style="padding-top: 0;">
         <div class="card">
-            <img src="imgs/elden-ring.jpg" alt="Imagem Card 1: Elden Ring">
+            <a href="pagjogo.html"><img src="imgs/elden-ring.jpg" alt="Imagem Card 1: Elden Ring"></a>
             <h2>Elden Ring</h2>
             <p>Elden Ring é um jogo eletrônico de RPG de ação em terceira pessoa, desenvolvido pela FromSoftware e publicado pela Bandai Namco Entertainment.</p>
         </div>
