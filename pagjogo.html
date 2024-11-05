@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Game Heaven</title>
+    <style>
+
+        .game-page-container {
+            display: flex;
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+
+        .game-image {
+            flex: 1;
+            max-width: 500px;
+        }
+
+        .game-image img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .game-info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .game-info h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .game-info .price {
+            font-size: 1.5rem;
+            color: #d9534f;
+            margin-bottom: 1rem;
+        }
+
+        .buy-btn {
+            background-color: #5cb85c;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+
+        .game-description {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            border-top: 1px solid #333;
+            width: 80%; 
+            margin: 2rem auto;
+        }
+        .game-description h3{
+            text-align: center;
+        }
+
+        .game-description p {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="logo.png" alt="Logo do site"></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="jogos.html">Jogos</a>
+            <a href="contato.html">Contato</a>
+            <a href="sobre.html">Sobre</a>
+            <button>Cadastrar</button>
+            <button>Login</button>
+        </nav>
+    </header>
+
+    <section class="game-page-container">
+        <div class="game-image">
+            <img src="elden-ring.jpg" alt="Imagem do Jogo Elden Ring">
+        </div>
+
+        <div class="game-info">
+            <h2>Elden Ring</h2>
+            <p class="price">R$199,99</p>
+            <button class="buy-btn">Comprar</button>
+            <p>Opções de pagamento: Cartão de crédito, débito e PIX</p>
+            <p>Plataforma: Windows</p>
+            <p>Lançamento: 24/02/2024</p>
+            <p>Desenvolvedor: FromSoftware, Inc</p>
+            <p>Distribuidor: BANDAI NAMCO Entertainment</p>
+
+        </div>
+    </section>
+
+    <section class="game-description container">
+        <h3>Descrição do Jogo</h3>
+        <p>O NOVO RPG DE AÇÃO E FANTASIA.<br>
+            Levante-se, Maculado, e seja guiado pela graça para portar o poder do Anel Prístino e se tornar um Lorde Prístino nas Terras Intermédias.
+         </p>
+         
+         <p>• Um mundo vasto e emocionante<br>
+            Um mundo vasto onde campos abertos e uma variedade de situações e masmorras imensas, com complexos designs tridimensionais se conectam com fluidez. Conforme explora, sinta a alegria de descobrir poderosas e desconhecidas ameaças que aguardam por você, levando a um grande senso de conquista.
+         </p>
+     
+         <p>• Crie seu próprio personagem<br>
+            Além de personalizar a aparência do seu personagem, você pode combinar livremente armas, armaduras e magias que equipar. Você pode desenvolver seu personagem de acordo com seu estilo de jogo, como aumentar a força muscular para se tornar um poderoso guerreiro, ou dominar a magia.
+         </p>
+     
+         <p>• Um drama épico nascido de um mito<br>
+            Uma história cheia de camadas, contada em fragmentos. Um drama épico onde os vários pensamentos dos personagens se interligam nas Terras Intermédias.
+         </p>
+     
+         <p>• Jogo on-line único que conecta você livremente aos outros<br>
+            Além do multijogador, onde você pode se conectar diretamente com outros jogadores e viajarem juntos, o jogo suporta um elemento on-line assíncrono único que permite que você sinta a presença dos outros.
+         </p>
+    </section>
+
+    <footer>
+        <div class="logo"><img src="logo.png" alt="Logo do site"></div>
+        <p>Nenhum direito reservado &copy; 2024</p>
+    </footer>
+
+</body>
+</html>
