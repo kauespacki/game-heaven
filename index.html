@@ -7,7 +7,7 @@
     <title>Game Heaven</title>
     <style>
         .container {
-            padding: 2rem;
+            padding: 5px;
         }
         .cards, .carousel {
             display: flex;
@@ -57,7 +57,6 @@
     </style>
 </head>
 <body>
-
     <header>
         <div class="logo"><img src="imgs/logo.png" alt="Logo do site"></div>
         <nav>
@@ -65,8 +64,8 @@
             <a href="#">Jogos</a>
             <a href="contato.html">Contato</a>
             <a href="sobre.html">Sobre</a>
-            <button>Cadastrar</button>
-            <button>Login</button>
+            <button class="btn cadastrar">Cadastrar</button>
+            <button class="btn login">Login</button>
         </nav>
     </header>
 
@@ -76,7 +75,7 @@
         <p>Adquira seus jogos favoritos em mídias físicas e leve a experiência para a sua coleção!</p>
     </section>
 
-    <section class="cards container">
+    <section class="cards container" style="padding-top: 0;">
         <div class="card">
             <img src="imgs/elden-ring.jpg" alt="Imagem Card 1: Elden Ring">
             <h2>Elden Ring</h2>
@@ -94,8 +93,8 @@
         </div>
     </section>
 
-    <section class="container">
-        <h2>Mais títulos disponíveis:</h2>
+    <section class="container" style="padding-top: 10px; padding-bottom: 0;">
+        <h2>Mais títulos disponíveis</h2>
     </section>
 
     <section class="carousel container">
