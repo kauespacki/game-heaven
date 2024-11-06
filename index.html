@@ -68,11 +68,22 @@
             0% { transform: translateX(0); }
             100% { transform: translateX(-50%); }
         }
+
+        .extra-text {
+            display: none;
+        }
+
+        .show-more {
+            color: blue;
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <header>
-        <div class="logo"><img src="imgs/logo.png" alt="Logo do site"></div>
+        <a href="index.html"><div class="logo"><img src="imgs/logo.png" alt="Logo do site"></div></a>
         <nav>
             <a href="index.html">Home</a>
             <div class="dropdown">
@@ -193,9 +204,19 @@
         <div class="noticia">
             <img src="imgs/noticia1.jpg">
             <div>
-                <h3> Confira o trailer de lançamento de Horizon Zero Dawn Remastered</h3>
+                <h3 style="margin-top: 0;"> Confira o trailer de lançamento de Horizon Zero Dawn Remastered</h3>
+
                 <p>O jogo Horizon Zero Dawn Remastered já está disponível no PlayStation 5 e PC. Criado pela Nixxes, a remasterização da primeira aventura de Aloy aprimora a qualidade visual do título criado pela Guerrilla Games.</p>
-                <p>De acordo com a companhia, o objetivo de Horizon Zero Dawn Remastered é equiparar a qualidade gráfica da aventura original com Forbidden West, o segundo jogo...</p>
+
+                <p>De acordo com a companhia, o objetivo de Horizon Zero Dawn Remastered é equiparar a qualidade gráfica da aventura original com Forbidden West, o segundo jogo
+                <span class="extra-text">da franquia. 
+
+                <br><br>
+                Horizon Zero Dawn Remastered traz diversas melhorias gráficas, em comparação com o game original. A Nixxes alterou o modelo dos personagens, reformulou completamente a   mbientes e trocou diversas texturas, tudo com o objetivo de tornar o mundo do game mais atrativo e belo.
+
+                Análises comparativas mostram as melhorias na modelagem dos personagens, que possuem mais detalhes nos rostos, olhos e principalmente nos cabelos. Do mesmo modo, a água está com visual semelhante ao apresentado em Horizon Forbidden West.</span>
+                <span class="show-more">Ver mais</span>
+                </p>
             </div>
         </div>
     </section>
